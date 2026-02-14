@@ -34,7 +34,7 @@ export default function ResumeAssistant() {
     setIsLoading(true);
 
     try {
-      const response = await fetch('http://localhost:5001/api/chat', {
+      const response = await fetch('https://ai-resume-builder-two-phi.vercel.app/api/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
